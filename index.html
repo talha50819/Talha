@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talha — JavaScript Developer</title>
+  <meta name="description" content="Talha — JavaScript developer building fast, modern web experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#">talha<span>.js</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Hello, world 👋</p>
+      <h1>I'm <span class="grad">Talha</span>.<br>I build things with JavaScript.</h1>
+      <p class="lead">Web apps, tools and experiments — crafted with modern JavaScript and shipped to the web.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn" href="https://github.com/talha50819" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+
+      <pre class="code" aria-label="Code sample"><code><span class="k">const</span> <span class="v">talha</span> = {
+  <span class="p">role</span>: <span class="s">"JavaScript Developer"</span>,
+  <span class="p">stack</span>: [<span class="s">"JS"</span>, <span class="s">"Node.js"</span>, <span class="s">"React"</span>],
+  <span class="p">status</span>: <span class="s" id="status">"building…"</span>,
+};</code></pre>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>I'm a developer who loves the JavaScript ecosystem — from front-end interfaces to Node.js back ends. This site is my home on the web, hosted on GitHub Pages and served from <code>talha.js.org</code>.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>talha.js.org</h3>
+          <p>This site — a lightweight, dependency-free landing page built with HTML, CSS and vanilla JS.</p>
+          <a href="https://github.com/talha50819/Talha" target="_blank" rel="noopener">Source →</a>
+        </article>
+        <article class="card muted">
+          <h3>Coming soon</h3>
+          <p>More JavaScript projects are on the way. Stay tuned.</p>
+        </article>
+        <article class="card muted">
+          <h3>Coming soon</h3>
+          <p>Experiments, tools and open-source contributions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Want to collaborate or say hi? Find me on <a href="https://github.com/talha50819" target="_blank" rel="noopener">GitHub</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Talha · Hosted on GitHub Pages · Domain by <a href="https://js.org" target="_blank" rel="noopener">JS.ORG</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
