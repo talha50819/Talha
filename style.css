@@ -79,7 +79,38 @@ h1 { font-size: clamp(2.2rem, 6vw, 4rem); font-weight: 800; line-height: 1.1; le
 .card:hover { transform: translateY(-3px); border-color: var(--accent); }
 .card h3 { margin-bottom: .5rem; }
 .card p { margin-bottom: 1rem; }
-.card.muted { opacity: .6; }
+
+.search {
+  width: 100%; margin: 1.5rem 0 1rem; padding: .85rem 1rem;
+  background: var(--surface); color: var(--text);
+  border: 1px solid var(--border); border-radius: 10px;
+  font: inherit;
+}
+.search:focus { outline: none; border-color: var(--accent); }
+
+.snippets { display: grid; gap: 1.25rem; }
+.snippet {
+  padding: 1.25rem 1.5rem; background: var(--surface);
+  border: 1px solid var(--border); border-radius: 12px;
+}
+.snippet-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.snippet h3 { font-family: "JetBrains Mono", monospace; font-size: 1.05rem; color: var(--accent); }
+.snippet p { margin: .5rem 0 .75rem; }
+.tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.tags span { font-size: .8rem; color: var(--muted); background: var(--bg); border: 1px solid var(--border); border-radius: 999px; padding: .1rem .6rem; }
+.snippet pre {
+  overflow-x: auto; padding: 1rem; background: var(--bg);
+  border: 1px solid var(--border); border-radius: 8px;
+  font-family: "JetBrains Mono", monospace; font-size: .85rem; line-height: 1.6;
+}
+.snippet pre code { color: var(--text); }
+.copy {
+  flex-shrink: 0; padding: .4rem .9rem; cursor: pointer;
+  background: transparent; color: var(--text); font: inherit; font-size: .85rem;
+  border: 1px solid var(--border); border-radius: 8px;
+}
+.copy:hover { border-color: var(--accent); color: var(--accent); }
+.empty { margin-top: 1rem; }
 
 footer { text-align: center; padding: 2rem 1rem; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--border); }
 

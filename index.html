@@ -12,8 +12,9 @@
 </head>
 <body>
   <header class="nav">
-    <a class="logo" href="#">talha<span>.js</span></a>
+    <a class="logo" href="#">talhadev<span>.js</span></a>
     <nav>
+      <a href="#snippets">Snippets</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
@@ -24,9 +25,9 @@
     <section class="hero">
       <p class="eyebrow">Hello, world 👋</p>
       <h1>I'm <span class="grad">Talha</span>.<br>I build things with JavaScript.</h1>
-      <p class="lead">Web apps, tools and experiments — crafted with modern JavaScript and shipped to the web.</p>
+      <p class="lead">Web apps, tools and experiments — plus a growing collection of practical, copy-paste JavaScript snippets for everyday problems.</p>
       <div class="cta">
-        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn primary" href="#snippets">Browse snippets</a>
         <a class="btn" href="https://github.com/talha50819" target="_blank" rel="noopener">GitHub →</a>
       </div>
 
@@ -35,6 +36,14 @@
   <span class="p">stack</span>: [<span class="s">"JS"</span>, <span class="s">"Node.js"</span>, <span class="s">"React"</span>],
   <span class="p">status</span>: <span class="s" id="status">"building…"</span>,
 };</code></pre>
+    </section>
+
+    <section id="snippets" class="section">
+      <h2>JavaScript Snippets</h2>
+      <p>Small, dependency-free JavaScript utilities I reach for again and again. Modern ES2020+, works in browsers and Node.js. Copy, paste, ship.</p>
+      <input id="snippet-search" class="search" type="search" placeholder="Search snippets… (e.g. debounce, array, async)" aria-label="Search snippets">
+      <div id="snippet-list" class="snippets"></div>
+      <p id="snippet-empty" class="empty" hidden>No snippets match your search.</p>
     </section>
 
     <section id="about" class="section">
@@ -47,16 +56,18 @@
       <div class="grid">
         <article class="card">
           <h3>talhadev.js.org</h3>
-          <p>This site — a lightweight, dependency-free landing page built with HTML, CSS and vanilla JS.</p>
+          <p>This site — a dependency-free collection of JavaScript snippets, built with HTML, CSS and vanilla JS.</p>
           <a href="https://github.com/talha50819/Talha" target="_blank" rel="noopener">Source →</a>
         </article>
-        <article class="card muted">
-          <h3>Coming soon</h3>
-          <p>More JavaScript projects are on the way. Stay tuned.</p>
+        <article class="card">
+          <h3>Ubunli</h3>
+          <p>A modern, interactive installer for Kali Linux security tools on Debian &amp; Ubuntu.</p>
+          <a href="https://github.com/talha50819/Ubunli" target="_blank" rel="noopener">Source →</a>
         </article>
-        <article class="card muted">
-          <h3>Coming soon</h3>
-          <p>Experiments, tools and open-source contributions.</p>
+        <article class="card">
+          <h3>Gesture-Controlled</h3>
+          <p>Control your system volume with hand gestures — computer vision with MediaPipe and PyCaw.</p>
+          <a href="https://github.com/talha50819/Gesture-Controlled" target="_blank" rel="noopener">Source →</a>
         </article>
       </div>
     </section>
@@ -71,6 +82,7 @@
     <p>© <span id="year"></span> Talha · Hosted on GitHub Pages · Domain by <a href="https://js.org" target="_blank" rel="noopener">JS.ORG</a></p>
   </footer>
 
+  <script src="snippets.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
